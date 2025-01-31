@@ -1,0 +1,121 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Background Image */
+body {
+    background-image: url("https://images.pexels.com/photos/258149/pexels-photo-258149.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Main Container */
+.container-fluid {
+    width: 100%;
+    max-width: 500px;
+    background: transparent;
+    padding: 2rem;
+    /* box-shadow: 0 10px 15px rgba(241, 238, 238, 0.3); */
+    text-align: center;
+    color: rgb(54, 54, 79);
+}
+
+/* Heading */
+.hd {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #000000;
+    text-shadow: 2px 2px 10px rgba(228, 235, 242, 0.7);
+}
+
+/* Input Section */
+.inputs {
+    margin: 1rem 0;
+}
+
+.inputs input[type="text"] {
+    width: 70%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+.inputs input[type="submit"] {
+    width: 25%;
+    padding: 0.8rem;
+    background: #025cf7;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.inputs input[type="submit"]:hover {
+    background: #1a74ac;
+}
+
+/* Display Section */
+.display {
+    margin-top: 20px;
+}
+
+/* Weather Information Card */
+.wrapper {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Weather Text Styling */
+.wrapper h2 {
+    font-size: 1.6rem;
+    font-weight: 900;
+    color: #01438a;
+}
+
+.wrapper p {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 0.5rem 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container-fluid {
+        width: 95%;
+        padding: 1.5rem;
+    }
+
+    .inputs input[type="text"], 
+    .inputs input[type="submit"] {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .wrapper {
+        padding: 1rem;
+    }
+
+    .wrapper h2 {
+        font-size: 1.3rem;
+    }
+
+    .wrapper p {
+        font-size: 1rem;
+    }
+}
